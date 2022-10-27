@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+body > * {
+    margin: 10px;
+}
+
+pre,
+canvas,
+video {
+    display: inline-block;
+    width: 480px;
+    height: 320px;
+    border: 2px solid orange;
+    margin: 0 5px;
+    overflow-y: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+button + button {
+    margin-left: 10px;
+}

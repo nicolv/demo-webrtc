@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>DEMO</title>
+    </head>
+    <body>
+        <div>
+            <button id="getUserMediaBtn">获取摄像头</button>
+            <button id="getMediaInfoBtn">获取媒体信息</button>
+            <button id="getDisplayMediaBtn">获取桌面</button>
+            <button id="snapshotBtn">截图</button>
+            <button id="recordBtn">开始录制</button>
+            <button id="stopRecordBtn">结束录制</button>
+            <button id="replayBtn">播放录制</button>
+            <button id="downloadBtn">下载视频</button>
+        </div>
+        <div>
+            <video id="displayVideo" controls autoplay></video>
+            <video id="replayVideo" controls autoplay></video>
+        </div>
+        <div>
+            <canvas id="snapshotCvs"></canvas>
+            <pre id="resultPre"></pre>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
